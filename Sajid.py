@@ -19,7 +19,7 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python VEER.py')
+	os.system('python Sajid.py')
 	
 	
 
